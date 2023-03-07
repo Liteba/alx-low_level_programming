@@ -7,10 +7,13 @@
  *Return: 0 if successfull
  */
 
-void positive_or_negative(int i)
+void positive_or_negative(int i);
 {
-if (i < 0)
+i = 0
+if (i > 0)
 printf("%d is negative\n", i);
-else
+if (i < 0)
 printf("%d is positive\n", i);
+if (i == 0)
+printf("%d is zero\n", i);
 }
