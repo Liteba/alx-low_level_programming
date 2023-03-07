@@ -1,25 +1,25 @@
 #include <stdio.h>
-
 /**
-*main - main work
-*
-*Return: 0 if successfull
-*/
-
+ *main-program entry point.
+ *Return:0 success, non zero error.
+ */
 int main(void)
 {
-int i;
+	int num;
 
-for (i = 0 ; i < 10 ; i++)
-{
-putchar(i + '0');
-if (i != 9)
-{
-putchar(',');
-putchar(' ');
+	for (num = '0'; num <= '9'; num++)
+	{
+		putchar(num);
+		if (num == '9')
+		{
+			break;
+		}
+		else
+		{
+			putchar(',');
+			putchar(' ');
+		}
+	}
+	putchar('\n');
+	return (0);
 }
-}
-putchar('\n');
-return (0);
-}
-
